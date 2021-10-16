@@ -2,6 +2,9 @@
 
 #include <string>
 #include <iostream>
+#include "HighwayPatrol.h"
+
+struct HighwayPatrol;
 
 struct Vehicle
 {
@@ -25,4 +28,6 @@ struct Vehicle
 protected:
     int speed = 0;
     std::string name;
+private:
+    friend HighwayPatrol;
 };
