@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-Car::Car(const std::string& n) : Vehicle(n) {}
+Car::Car(const std::string& name) : Vehicle(name) {}
 
 void Car::closeWindows()
 {

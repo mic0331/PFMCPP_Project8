@@ -1,7 +1,7 @@
 #include "Motorcycle.h"
 #include "Vehicle.h"
 
-Motorcycle::Motorcycle(const std::string& n) : Vehicle(n) {}
+Motorcycle::Motorcycle(const std::string& name) : Vehicle(name) {}
 
 void Motorcycle::lanesplitAndRace( int topSpeed )
 {

@@ -2,7 +2,6 @@
 
 #include <string>
 #include <iostream>
-#include "HighwayPatrol.h"
 
 struct HighwayPatrol;
 
@@ -10,7 +9,7 @@ struct Vehicle
 {
     Vehicle(const std::string& n) : name(n) { }
     
-    virtual ~Vehicle() = default;
+    virtual ~Vehicle();
     Vehicle(const Vehicle&) = default;
     Vehicle& operator=(const Vehicle&) = default;
     
