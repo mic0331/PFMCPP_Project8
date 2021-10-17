@@ -1,7 +1,7 @@
 #pragma once
 #include "Vehicle.h"
 
-struct SemiTruck : public Vehicle
+struct SemiTruck : Vehicle
 {
     SemiTruck(const std::string&);
     ~SemiTruck() override;
