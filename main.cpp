@@ -135,19 +135,22 @@ int main()
 
     motorcycles.reserve(2);
 
-    trucks.emplace_back("Moto 1");
-    trucks.emplace_back("Moto 2");
+    motorcycles.emplace_back("Moto 1"); 
+    motorcycles.emplace_back("Moto 2");
     
     
     //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
     //be careful to not accidentally make element copies when iterating.
-    for (Car& c: cars) {
+    for (Car& c: cars) 
+    {
         highway.addVehicle(&c);
     }
-    for (Motorcycle& m: motorcycles) {
+    for (Motorcycle& m: motorcycles) 
+    {
         highway.addVehicle(&m);
     }
-    for (SemiTruck& st: trucks) {
+    for (SemiTruck& st: trucks) 
+    {
         highway.addVehicle(&st);
     }
     
